@@ -1,0 +1,231 @@
+/******************************************
+             General
+******************************************/
+
+body{
+    
+    /*estos font fue bajado de GoogleFont Free*/
+    
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ravi Prakash', cursive;
+    font-family: 'Pacifico', cursive;
+    
+    background-color:white;
+    color:cornflowerblue;
+}
+
+/*El txt-decoration: none - Remueve toda las lineas de la pagina lo deja clear.*/
+a{
+    text-decoration:none;
+    color:black;
+}
+
+#left{
+    
+    clear:both;
+}
+
+
+/********************************************************************************************
+Esto es para quitarle los bullets a la lista "Este es el formato en CSS para los comentarios"
+
+Este es para los titulos de aboutme,Profilio/ContactMe=Formulario
+********************************************************************************************/
+
+ul li{    
+    
+    list-style: none;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display:inline-block;
+    padding: 5px;
+    
+    /*border-radius: 40%;
+    background-color:darkgray;*/
+    
+        }
+#list{
+    margin-left: 6.5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 90%;
+    height: 50px;
+    padding: 5px;
+    background-color:darkgray;
+    border-radius: 30px;
+      
+}
+
+
+/*El comando siguiente crea un borde alrededor de la fotos que esten dentro del div*/
+
+{
+    border-style:double;     
+}
+
+ 
+/**************************************************
+    Pagina de porfolio = "index" modificion foto 1
+***************************************************/
+
+#fotos{     
+    margin-left:90px;
+    margin-bottom: 0PX;
+    width: 800px;
+    height: 35%;
+    padding: 5px;
+    background-color:darkgray;
+    border-radius: 80%; width: 400px;   
+        
+}
+.img-resp{
+     width: 200px;
+     height: auto;
+     margin: auto;
+     display: block;    
+}
+.img-resp{border-radius: 50%}
+
+/*************************************************
+    Pagina de porfolio = "index" modificion foto 2
+**************************************************/
+
+/*El # rancho es la tabla rendonde que aparece en la parte de atras... El cual fue declarado en el div id*/
+
+#rancho{
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 0PX;
+    width: 700px;
+    height: 35%;
+    border-color: aqua;
+    padding: 10px;
+    background-color:darkgray;
+    border-radius: 90%; width: 450px;  
+}
+.img-ranch{border-radius: 90%; width: 500; height: 350px;}
+
+
+/**********************************************
+   Esta es mi CSS / CSS3 para el "formulario"
+**********************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:helvetica Neue;
+    font-weight: lighter;
+}
+
+html,body{
+    background-color: #e2e2e2;
+}
+
+#formulario{
+    /*comando position: absolute; lo que me deja hacer es centralizar el formulario con el top, left. Los margenes lo que me hacen es ayudar a forzar mas la centralizacion pq el width de la pagina es de 400px pues le pongo un mar.left de -200 y juego con el otro*/
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -300px;
+    width: 400px;
+/*vamos a cambiar este comando (height) x min-height*/
+    min-height: 100px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+p#titulo{
+    font-size: 2.6em;
+    text-align: center;
+    margin-top: 20px;
+    }
+
+input[type="text"],[type="mail"],[type="password"],[type="reset"]/*Estos corchetes de tipo no curvos son formato CSS3 para que coja todo las etiquetas de tipo input[type="ect"*/{
+    width: 350px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top:10px;
+    padding-left: 10px; /*lo que le pongamos al padding ahi que quitarselo al width. Asi no queda tan ancho. El padding es una intruccion para que no quede pegado a las esquinas, le da espacio a los objetos*/
+    font-size: 1.1em;
+    outline: none;
+    border: 0px;
+    background-color: #dcdcdc;
+    border-radius: 5px;    
+}
+
+/*input separado para el boton de enviar*/
+
+input[type="submit"]{
+    margin: 20px;
+    margin-bottom: 20px;
+    width: 360px;
+    height: 40px;
+    outline: none;
+    border: 0px;
+    background-color: #75b6dc;
+    border-radius: 5px;
+    color:white;
+    font-size: 1.2em;
+    /*Para Chrome y Safari*/-webkit-box-shadow:0px/*Hori*/5px/*verti*/0px /*difuminacion*/#659dbf;
+    -moz-box-shadow:;/*para mozilla*/
+    -ms-box-shadow:;/*para IE*/  
+}
+
+input[Type="comments"]{
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 350px;
+    height: 100px;   
+    font-size: 1.1em;
+    outline: none;
+    border: 0px;
+    background-color: #dcdcdc;
+    border-radius: 5px; 
+}
+
+
+
+
+/******************************************************
+CSS para modificar mi Aboutme.html
+******************************************************/
+
+#dog{
+    background-color: #ccc;
+    width: 100%;
+    border-radius: 85%;
+      } /*Comando para el Div que se identifico como dog*/
+
+/*comando para modificar la imagen ya que tiene un class="img-dog"*/
+
+.img-dog{    
+    width: 400px;
+    height: auto;
+    margin: auto;
+    display: block; 
+    
+    /*comando para poder aliniar al centro, siempre y cuando el div en estre caso dog tenga un width y la imagen tenga width y height*/
+    
+    border-bottom-right-radius: 50%;
+}
+
+/*********************
+ CSS Modificar Head
+*********************/
+#head{ 
+    margin-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 50px;
+    padding: 15px;
+    background-color:darkgray;
+    border-radius: 200px;
+    color:cyan;
+}
+
+
+    
